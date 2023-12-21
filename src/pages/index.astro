@@ -1,0 +1,27 @@
+---
+import Card from '../components/Card.astro';
+import Container from '../components/Container.astro';
+import EmptyState from '../components/EmptyState.astro';
+import Layout from '../layouts/Layout.astro';
+import List from '../components/List.astro';
+import ListItem from '../components/ListItem.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Container>
+			<Card>
+				<List>
+					<ListItem>
+						Test
+					</ListItem>
+				</List>
+
+				<div slot="footer">
+					<EmptyState />
+				</div>
+				
+			</Card>
+		</Container>
+	</main>
+</Layout>
